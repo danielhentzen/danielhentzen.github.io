@@ -9,6 +9,12 @@ header {
   background-position: top;
 }
 
+@media screen and (max-width: 770px) {
+  header {
+    padding: 100px 0 54px;
+  }
+}
+
 section {
   padding-top: 70px;
   padding-bottom: 40px;
