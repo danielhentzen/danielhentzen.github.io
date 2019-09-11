@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 header {
-  padding: 150px 0 50px;
+  padding: 150px 0 64px;
   background-color: white;
   background-position: top;
 }
@@ -57,7 +57,8 @@ section {
   margin-bottom: 20px;
   border-radius: 50%;
   width: 30%;
-  border: 6px solid white;
+  border: 5px solid white;
+  box-shadow: 0px 0px 20px black;
 }
 
 .img-container {
@@ -97,13 +98,27 @@ section {
   border-radius: 50%;
 }
 
+.ai {
+  margin: 20px;
+  padding: 15px;
+  font-size: 25px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.9;
   color: white;
 }
 
 /* Set a specific color for each brand */
+
+.ai-google-scholar {
+  background: white;
+  box-shadow: 0px 0px 6px black;
+}
 
 /* Facebook */
 .fa-facebook {
@@ -127,9 +142,12 @@ section {
 
 /* Email */
 .fa-envelope {
-  color: white;
-  background: #4c4d4c;
+  color: black;
+  background: white;
   box-shadow: 0px 0px 6px black;
+}
+.fa-envelope:hover {
+  color: black;
 }
 
 /* github */
