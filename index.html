@@ -1,10 +1,465 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Daniel Hentzen</title>
-  </head>
-  <body>
-    Daniel Hentzen
-  </body>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Daniel Hentzen's Website</title>
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:600&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-img">
+    <div class="container text-center text-white">
+      <div class="img-container">
+        <img src="img/hentzen-profile-2.jpg" class="img-round" />
+      </div>
+      <h1 class="title-name">Daniel Hentzen</h1>
+      <p class="title-description">Robotics Research Engineer</p>
+      <a href="mailto:hentzend@gmail.com" class="fa fa-envelope"></a>
+      <a href="https://www.linkedin.com/in/daniel-hentzen-7691a412a" target="_blank" class="fa fa-linkedin"></a>
+      <a href="https://github.com/danielhentzen" target="_blank" class="fa fa-github"></a>
+
+  </header>
+
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About</h2>
+          <p class="lead">I am a researcher in robotics and autonomous systems,
+            with a particular interest in optimal control, motion planning and
+            decision making under uncertainty. Along with advances in perception
+            and machine learning, such algorithms will enable the next moonshots
+            of our time, significantly improving the safety and efficiency of many of our
+            daily activities in the process. I am excited to help tackle
+            the important challenges that lie ahead in this golden age of robotics!
+          </p>
+          <p class="lead">I have recently graduated with a Master's degree in Mechanical
+            Engineering from <a href="https://ethz.ch/en.html" target=_blank>ETH Zurich</a>,
+            focusing on classical/optimal control systems and state estimation. I performed my
+            master's thesis under Dr. Roland Brockers in the
+            <a href="https://www-robotics.jpl.nasa.gov/groups/RoboticAerialMobility/" target=_blank>Robotic Aerial Mobility Group</a>
+            at the <a href="https://www.jpl.nasa.gov" target=_blank>NASA Jet Propulsion Laboratory</a>, co-supervised by ETH's
+            <a href="https://asl.ethz.ch/" target=_blank>Autonomous Systems Lab</a> under Prof. Roland Siegwart.
+          </p>
+          <p class="lead"> In parallel to my studies, I interned in
+            NASA JPL's Computer Vision Group (2017) and worked as an engineer (2015) and
+            team leader (2016) at <a href="http://amzracing.ch/" target=_blank>AMZ Racing</a>, ETH's
+            <a href="https://www.theverge.com/2016/6/22/12004422/fastest-accelerating-electric-car-world-record-formula-student-sae" target=_blank>world-record-breaking</a>
+            Formula Student Electric team.
+          </p>
+          <div class="resume">
+            <a href="pdf/resume-hentzen-aug19.pdf" target="_blank" class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Projects</h2>
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Model Predictive Control; Recursive State Estimation
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Disturbance Estimation and Rejection for High-Precision Multirotor Control</h5>
+                <h6 class="card-subtitle mb-2 text-muted">NASA JPL & Autonomous Systems Lab ETH Zurich</h6>
+                <h6 class="card-subtitle mb-2 text-muted">May 2018 - December 2018</h6>
+                <p class="card-text card-update"> <b>UPDATE (July 2019): Our paper
+                    was accepted at <a href="https://www.iros2019.org/" target=_blank>IROS 2019</a>!
+                    Many thanks to my co-authors Thomas Stastny, Prof. Roland Siegwart and Roland Brockers! </b></p>
+                <p class="card-text">In this 6-month master's thesis project I designed, implemented
+                  and tested different classical (PID) and optimal (MPC) flight control
+                  and state estimation (EKF, UKF) algorithms from scratch, with the goal of improving the
+                  position control accuracy of small unmanned aerial vehicles in the presence of strong
+                  and dynamic external disturbances such as heavy wind gusts or ground effect. </p>
+                <p class="card-text">The developed nonlinear model predictive
+                  position controller takes into account the disturbance state,
+                  estimated online using an Extended Kalman Filter, to consistently achieve a reduction in
+                  position control error in heavy winds of up to around 80% compared to common
+                  PID controllers currently used in most industrial UAV applications.
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-1" data-slide-to="2"></li>
+                    <li data-target="#carousel-1" data-slide-to="3"></li>
+                    <li data-target="#carousel-1" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/drone-gust.png" alt="UAV wind disturbance">
+                      <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                      </div> -->
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-msc/control-architecture.png" alt="UAV control architecture">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-msc/estimator-architecture.png" alt="UAV disturbance estimator architecture">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-msc/hardware.png" alt="UAV hardware">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-msc/design-process.png" alt="System design process">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <!-- Links -->
+                <a href="https://arxiv.org/pdf/1908.03166.pdf" target="_blank" class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>IROS 2019 Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                PID Control; Visual Fiducial Localization; Full-cycle Autonomy
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Long-Duration Fully Autonomous Operation of Rotorcraft UAS for Remote-Sensing Data Acquisition</h5>
+                <h6 class="card-subtitle mb-2 text-muted">NASA JPL</h6>
+                <h6 class="card-subtitle mb-2 text-muted">November 2017 - May 2018</h6>
+                <p class="card-text card-update"> <b>UPDATE (July 2019): Our paper
+                    was accepted for publication in the
+                    <a href="http://www.journalfieldrobotics.org/" target=_blank>Journal of Field Robotics</a>!
+                    Many thanks to Danylo Malyuta, Christian Brommer, Roland Brockers,
+                    Thomas Stastny and Prof. Roland Siegwart! </b></p>
+                <p class="card-text">In a three-person team in JPL's Computer Vision
+                  Group, we developed and implemented a complete guidance, navigation
+                  and control framework for a fully autonomous Unmanned Aerial Vehicle,
+                  capable of performing repeated flights for long-term observation missions
+                  without any human intervention. We addressed two key technologies that are
+                  critical for such a system: full platform autonomy to enable mission
+                  execution independently from human operators and the ability of
+                  vision‐based precision landing on a platform for automated
+                  recharging.
+                </p>
+                <p class="card-text">
+                  My responsibilities included the development of robust flight control
+                  and autonomy algorithms, integration of RTK GPS state estimation
+                  into the control system and the evaluation of the landing pad pose
+                  estimation accuracy. In April 2018, we achieved an 11 hour fully-autonomous
+                  indoor flight, as well as a 4 hour outdoor flight without the need
+                  for human intervention.
+
+
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-2" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-2" data-slide-to="1"></li>
+                    <li data-target="#carousel-2" data-slide-to="2"></li>
+                    <li data-target="#carousel-2" data-slide-to="3"></li>
+                    <li data-target="#carousel-2" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/project-autonomy/charging.png" alt="UAV charging pad">
+                      <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                      </div> -->
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-autonomy/autonomy.png" alt="UAV autonomy logic">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-autonomy/system.png" alt="UAV autonomy system design">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-autonomy/landing.png" alt="UAV precision landing accuracy">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-autonomy/cycles.png" alt="UAV autonomous recharging cycles">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <!-- Links -->
+                <a href="https://arxiv.org/pdf/1908.06381.pdf" target="_blank" class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>JFR Paper</a>
+                <a href="https://arxiv.org/pdf/1810.05683.pdf" target="_blank" class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>IROS 2018 Paper</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- Project 3 -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Path Planning; Stochastic Optimal Control; Data Analysis
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Safety-Optimal Path Planning for Aircraft in Hazardous Weather</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Automatic Control Lab ETH Zurich</h6>
+                <h6 class="card-subtitle mb-2 text-muted">February 2017 - August 2017</h6>
+                <p class="card-text card-update"> <b>UPDATE (June 2018): Our paper
+                    was accepted for publication in
+                    <a href="https://www.journals.elsevier.com/aerospace-science-and-technology" target=_blank>Aerospace Science and Technology</a>!
+                    Many thanks to Manuel Soler, Prof. Maryam Kamgarpour and Daniel-Gonzalez Arribas! </b></p>
+                <p class="card-text">As a student researcher under Prof. Maryam Kamgarpour,
+                  I developed a novel data modeling and path planning framework to enable
+                  safety-optimal path planning for commercial aircraft flying in the
+                  presence of hazardous thunderstorms.</p>
+                <p class="card-text">
+                  The thunderstorm obstacles are modeled stochastically, based on
+                  large meteorological datasets. The stochastic obstacle model is then
+                  used within an optimal path planning algorithm solved with
+                  dynamic programming. The resulting aircraft
+                  trajectories maximize the probability of reaching a given
+                  waypoint while avoiding multiple thunderstorms, taking into
+                  account uncertainties in both the system dynamics (due to wind disturbance)
+                  and the obstacles. The resulting trajectories are validated
+                  against actual realizations of thunderstorms.</p>
+                <!-- Image Carousel -->
+                <div id="carousel-3" class="carousel slide" data-ride="carousel">
+                  <!-- <ol class="carousel-indicators">
+                    <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+                  </ol> -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/project-planning/flight.png" alt="Safety-optimal trajectories">
+                      <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                      </div> -->
+                    </div>
+                  </div>
+                  <!-- <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a> -->
+                </div>
+                <!-- Links -->
+                <a href="https://arxiv.org/pdf/1806.02396.pdf" target="_blank" class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>AESCTE Paper</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- Project 4 -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Electric Vehicle Propulsion Sytems; Battery Technology; Team Management
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Development of an ultra-high-performance electric racecar (Formula Student Electric)</h5>
+                <h6 class="card-subtitle mb-2 text-muted">AMZ Racing</h6>
+                <h6 class="card-subtitle mb-2 text-muted">2014 - 2016</h6>
+
+                <p class="card-text">
+                  AMZ Racing is one of the world's leading Formula Student teams, and
+                  the team behind the <a href="https://www.theverge.com/2016/6/22/12004422/fastest-accelerating-electric-car-world-record-formula-student-sae" target="_blank">world's fastest accelerating
+                    electric vehicle</a>.
+                  Each year, the team of undergrad students sets out to design, manufacture, test and race the
+                  fastest electric racecar in a field of more than a hundred
+                  international teams, in the timeframe of merely ten months.
+
+                  After having worked at AMZ as a battery engineer in 2015, I had
+                  the pleasure of leading the team as team captain in 2016. Vital
+                  aspects of the project management
+                  included cost and risk assessment, efficient knowledge transfer
+                  and communication as well as competitive yet flexible milestone
+                  scheduling.
+                </p>
+                <p class="card-text">
+                  Our tireless work resulted in an electric racecar sprinting from 0
+                  to 100 km/h in only 1.9s. This is made possible by high power
+                  (four wheelhub motors
+                  delivering 37 kW of power and over 1600 Nm of torque each),
+                  excellent total drivetrain efficiency (81%) and a lightweight,
+                  carbon-fibre chassis (181 kg total vehicle weight). The organization, quality and level of innovation
+                  of our engineering approach was rewarded with glowing feedback from leading
+                  automotive and motorsports experts at the 2016 Formula Student
+                  competitions, three out of four wins in the Engineering Design category, one overall win
+                  and a number of special awards.
+                </p>
+                <p class="card-text">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=OSMDiGV0GAI" allowfullscreen></iframe>
+                  </div>
+
+
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-4" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-4" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-4" data-slide-to="1"></li>
+                    <li data-target="#carousel-4" data-slide-to="2"></li>
+                    <li data-target="#carousel-4" data-slide-to="3"></li>
+                    <li data-target="#carousel-4" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/project-amz/gotthard-1.jpg" alt="AMZ gotthard">
+                      <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                      </div> -->
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-amz/wheelhub-real.png" alt="AMZ wheelhub motor">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-amz/battery-fluela.png" alt="AMZ battery design">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-amz/drivetrain.png" alt="AMZ drivetrain">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/project-amz/celebration-2.png" alt="AMZ team celebration">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-4" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                Picture Credits: Christian Kreutzmann
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Publications</h2>
+          <h4>Journal</h4>
+          <p class="lead">
+            <ol>
+              <li>D. Malyuta, C. Brommer, <b>D. Hentzen</b>, T. Stastny, R. Siegwart, and R. Brockers, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21898?af=R" target="_blank">"Long-Duration Fully Autonomous Operation of Rotorcraft
+                  UAS for Remote-Sensing Data Acquisition}"</a>, <i>Journal of Field Robotics</i>, 2019</li>
+              <li><b>D. Hentzen</b>, M. Kamgarpour, M. Soler, and D. Gonzalez-Arribas, <a href="https://arxiv.org/abs/1806.02396" target="_blank">"On maximizing safety in stochastic aircraft trajectory planning with uncertain thunderstorm
+                  development''</a>, <i>Aerospace Science and Technology</i>, vol. 79, pp. 543-553, 2018</li>
+            </ol>
+          </p>
+          <h4>Conference Proceedings</h4>
+          <p class="lead">
+            <ol start="3">
+              <li><b>D. Hentzen</b>, T. Stastny, R. Siegwart, R. Brockers, <a href="https://arxiv.org/abs/1908.03166" target="_blank">"Disturbance Estimation and Rejection for High-Precision Multirotor Position Control"</a> in <i>IEEE Intelligent
+                  Robots and Systems (IROS)</i>, Macao, China, 2019</li>
+              <li>C. Brommer, D. Malyuta, <b>D. Hentzen</b>, and R. Brockers, <a href="https://arxiv.org/abs/1810.05683" target="_blank">"Long-Duration Autonomy for Small Rotorcraft UAS including Recharging''</a>, in <i>IEEE Intelligent Robots and
+                  Systems (IROS)</i>, Madrid, Spain, 2018</li>
+              <li>D. Gonzalez-Arribas, <b>D. Hentzen</b>, M. Sanjurjo-Rivo, M. Kamgarpour, and M. Soler, "Optimal Aircraft Trajectory Planning in the Presence of Stochastic Convective Weather Cells", in <i>17th AIAA Aviation Technology, Integration,
+                  and Operations Conference</i>, Denver, CO, 2017</li>
+            </ol>
+          </p>
+          <h4>Patents</h4>
+          <p class="lead">
+            <ol start="1">
+              <li>Roland Brockers, Darren T. Drewry, Danylo Malyuta, Christian Brommer, Daniel Hentzen, "Long-Duration, Fully Autonomous Operation Of Small Rotorcraft Unmanned Aerial Systems Including Recharging" (Provisional) </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Daniel Hentzen, 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>

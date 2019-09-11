@@ -1,0 +1,4 @@
+[submodule "startbootstrap-grayscale"]
+	path = startbootstrap-grayscale
+	url = https://github.com/BlackrockDigital/startbootstrap-grayscale.git
+	branch = master
